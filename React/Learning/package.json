@@ -1,0 +1,50 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "author": "yiminghe <yiminghe@gmail.com>",
+  "engines": {
+    "node": ">=0.11"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/yiminghe/learning-react.git"
+  },
+  "keywords": [
+    "react",
+    "jsx",
+    "koa"
+  ],
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "browserify-jsx": "^1.0.0",
+    "browserify-shim": "^3.8.0",
+    "gulp": "^3.8.10",
+    "node-jsx": "^0.12.0",
+    "rc-server": "^1.5.10",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "console-polyfill": "~0.1.2",
+    "es5-shim": "^4.0.5",
+    "events": "^1.0.2",
+    "flux": "^2.0.1",
+    "gregorian-calendar": "^2.0.3",
+    "gregorian-calendar-format": "^2.0.2",
+    "jquery": "^2.1.1",
+    "modulex": "^1.7.1",
+    "object.assign": "^1.0.3",
+    "rc-calendar": "^1.5.5",
+    "react": "^0.12.0",
+    "react-router": "^0.10.2"
+  },
+  "browserify-shim": {
+    "react-router": "global:ReactRouter",
+    "jquery": "global:jQuery",
+    "react": "global:React"
+  },
+  "scripts": {
+    "start": "node --harmony server"
+  }
+}
