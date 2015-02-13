@@ -7,7 +7,7 @@ var equipoSchema = new mongoose.Schema({
     name: String,
     color: String,
     cantidad: Number,
-    jugadores: Array
+    jugadores: [{ type: String, ref: 'Jugador' }]
 });
 
 // Return model
