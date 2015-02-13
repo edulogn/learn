@@ -1,14 +1,17 @@
 {
-  "name": "react-browserify-template",
+  "name": "Equipos",
   "version": "0.0.1",
   "description": "Quick boilerplate for browserify and React modules.",
-  "main": "index.js",
+  "main": "./js/app.js",
   "dependencies": {
     "compression": "^1.4.0",
     "connect": "^3.3.4",
     "http": "0.0.0",
-    "react": "latest",
-    "serve-static": "^1.8.1"
+    "serve-static": "^1.8.1",
+    "bootstrap": "~3.3.2",
+    "jquery": "^2.1.1",
+    "react": "^0.12.0",
+    "react-router": "^0.10.2"
   },
   "devDependencies": {
     "browserify": "~2.36.0",
@@ -19,9 +22,9 @@
     "watchify": "~0.4.1"
   },
   "scripts": {
-    "start": "STATIC_ROOT=./static watchify -o browser-bundle.js -v -d .",
-    "build": "STATIC_ROOT=./static NODE_ENV=production browserify . | uglifyjs -cm > browser-bundle.min.js",
-    "collect-static": "collect-static . ./static",
+    "start": "STATIC_ROOT=./static/js watchify -o browser-bundle.js -v -d .",
+    "build": "STATIC_ROOT=./static/js NODE_ENV=production browserify . | uglify-js -cm > browser-bundle.min.js",
+    "collect-static": "collect-static . ./static/js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pete Hunt",
